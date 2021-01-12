@@ -33,12 +33,12 @@
 #include <sys/_system_properties.h>
 
 #include <android-base/properties.h>
+#include <android-base/strings.h>
 #include <android-base/logging.h>
 
 #include "vendor_init.h"
 
 using android::base::GetProperty;
-using android::init::property_override;
 
 std::vector<std::string> ro_props_default_source_order = {
     "",
